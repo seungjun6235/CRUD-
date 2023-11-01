@@ -60,5 +60,10 @@ class post(models.Model):
 
 ```
 
+2. 번역본 생성
+```
+python manage.py makemigrations
+```
+
 
 
