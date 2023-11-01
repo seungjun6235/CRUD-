@@ -25,6 +25,7 @@ def detail(request, id):
 def new(request):
     return render(request, 'new.html')
 
+
 def create(request):
     title = request.GET.get('title')
     content = request.GET.get('content')
@@ -36,3 +37,10 @@ def create(request):
 
     # return redirect('/index/')
     return redirect(f'/posts/{post.id}/')
+
+
+def delete(request,id):
+    post = Post.objects.get(id=id)
+    post.delete()
+
+    return redirect('/index/')
