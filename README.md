@@ -43,3 +43,22 @@ INSATALLED APP =[
     '<app_name>'
 ]
 ```
+
+10. `urls.py` => `views.py` => `template/*.html` 작성
+
+
+
+## Model 
+
+1. 모델 정의(`models.py`)
+    - 모델 이름은 기본적으로 단수 형태
+
+```python
+class post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+
+```
+
+
+
