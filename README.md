@@ -65,5 +65,12 @@ class post(models.Model):
 python manage.py makemigrations
 ```
 
+3. DB에 반영
+```
+python manage.py migrate
+```
+
+4. 생성한 모델을 admin에 등록
+
 
 
